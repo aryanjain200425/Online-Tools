@@ -1,0 +1,12 @@
+div{
+    display: flex;
+}
+
+.textArea {
+    
+    resize: none;
+}
+
+.textArea .title{
+    flex:1;
+}
