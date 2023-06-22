@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-    <div id="password_area">
-        <h2>Password Generator</h2>
-        <p> </p>
-        <button>Generator</button>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="password-container">
+      <input type="text" id="passwordInput" readonly>
+      <button id="generateButton">Generate Password</button>
     </div>
+  </div>
 
-    <br>
-    
-
-    <div class="options">
-        <p class="title">Length</p>
-
-        <textarea class="textArea" cols="0" rows="1" resizeable="False"></textarea>
-
-    </div>
-    
-
-
-
-    
-    
+  <script src="script.js"></script>
 </body>
 </html>
