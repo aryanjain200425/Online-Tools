@@ -22,7 +22,12 @@ function convertUnits() {
     convertedValue = value * 0.3048;
   } else if (selectedFromUnit === 'm' && selectedToUnit === 'ft') {
     convertedValue = value / 0.3048;
+  } else if (selectedFromUnit === 'ft' && selectedToUnit === 'cm'){
+    convertedValue = value * 30.48;
+  } else if (selectedFromUnit === 'cm' && selectedToUnit === 'ft'){
+    convertedValue = value / 30.48;
   }
+  
   // Add more conversion cases as needed
 
   const roundedValue = convertedValue.toFixed(2);
