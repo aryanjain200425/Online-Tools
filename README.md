@@ -2,5 +2,5 @@
 
 Online Tools website: 
 
-https://aryanjain200425.github.io/Online-Tools/
+https://aryanjain200425.github.io/
 
