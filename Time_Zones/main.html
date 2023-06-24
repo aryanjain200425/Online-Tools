@@ -9,8 +9,16 @@
     <label for="time">Time:</label>
     <input type="text" id="time" placeholder="HH:mm">
   
-    <label for="timezone">Time Zone:</label>
-    <select id="timezone">
+    <label for="fromTimezone">From Time Zone:</label>
+    <select id="fromTimezone">
+      <option value="America/New_York">New York (EST)</option>
+      <option value="Europe/London">London (GMT)</option>
+      <option value="Asia/Tokyo">Tokyo (JST)</option>
+      <!-- Add more time zone options here -->
+    </select>
+
+    <label for="toTimezone">To Time Zone:</label>
+    <select id="toTimezone">
       <option value="America/New_York">New York (EST)</option>
       <option value="Europe/London">London (GMT)</option>
       <option value="Asia/Tokyo">Tokyo (JST)</option>
