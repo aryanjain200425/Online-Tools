@@ -1,12 +1,17 @@
-
 document.getElementById("convertBtn").addEventListener("click", function() {
     var timeInput = document.getElementById("time").value;
-    var timezoneSelect = document.getElementById("timezone");
-    var selectedTimezone = timezoneSelect.value;
+    var fromTimezoneSelect = document.getElementById("fromTimezone");
+    var toTimezoneSelect = document.getElementById("toTimezone");
+    var fromTimezone = fromTimezoneSelect.value;
+    var toTimezone = toTimezoneSelect.value;
     
-    var options = { timeZone: selectedTimezone, hour: "numeric", minute: "numeric" };
-    var convertedTime = new Date().toLocaleTimeString([], options);
+    var options = { timeZone: fromTimezone, hour: "numeric", minute: "numeric" };
+    var fromTime = new Date().toLocaleTimeString([], options);
+  
+    options.timeZone = toTimezone;
+    var toTime = new Date().toLocaleTimeString([], options);
     
-    document.getElementById("convertedTime").textContent = "Converted Time: " + convertedTime;
+    var conversionResult = "Converted Time: " + fromTime + " (" + fromTimezone + ") to " + toTime + " (" + toTimezone + ")";
+    document.getElementById("convertedTime").textContent = conversionResult;
   });
   
