@@ -49,9 +49,12 @@ nav ul li a:hover {
 
 main {
   padding: 20px;
+}
+
+.container {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .blog-post {
