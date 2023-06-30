@@ -136,3 +136,22 @@ footer {
   margin-bottom: 0;
 }
 
+.card{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.card .card-header .card-content .card-footer {
+  border: 1px dotted #0313fc;
+}
+.card .card-header{
+  flex: 0 1 auto;
+}
+.card .card-content {
+  flex: 1 1 auto;
+}
+.card .card-footer {
+  flex: 0 1 40px;
+}
+
