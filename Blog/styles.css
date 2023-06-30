@@ -57,8 +57,8 @@ main {
   flex-wrap: wrap;
 }
 
-.blog-post {
-  width: 300px;
+.Card {
+  width: 400px;
   margin: 20px;
   padding: 20px;
   background-color: #fff;
@@ -67,16 +67,16 @@ main {
   transition: transform 0.3s ease;
 }
 
-.blog-post:hover {
+.Card:hover {
   transform: translateY(-5px);
 }
 
-.blog-post h2 {
+.Card h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.blog-post p {
+.Card p {
   margin-bottom: 10px;
 }
 
@@ -100,3 +100,39 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+.card-header {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 20px;
+  color: #333;
+}
+
+
+.card-footer {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-footer p {
+  margin: 0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
