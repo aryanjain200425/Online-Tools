@@ -57,7 +57,7 @@ main {
   flex-wrap: wrap;
 }
 
-.Card {
+.card {
   width: 400px;
   margin: 20px;
   padding: 20px;
@@ -67,16 +67,16 @@ main {
   transition: transform 0.3s ease;
 }
 
-.Card:hover {
+.card:hover {
   transform: translateY(-5px);
 }
 
-.Card h2 {
+.card h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.Card p {
+.card p {
   margin-bottom: 10px;
 }
 
